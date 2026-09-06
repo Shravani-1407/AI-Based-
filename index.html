@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdentityShield AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛡️ IdentityShield AI</h1>
+
+        <p class="subtitle">
+            AI-Based Fake Identity and Document Screening System
+        </p>
+        <div class="feature-cards">
+
+            <div class="feature-card">
+                <div class="feature-icon">📄</div>
+                <h3>Document Screening</h3>
+                <p>Upload and screen identity documents through automated validation checks.</p>
+            </div>
+        
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Fraud Risk Assessment</h3>
+                <p>Evaluate screening signals and display low, medium, or high-risk outcomes.</p>
+            </div>
+        
+            <div class="feature-card">
+                <div class="feature-icon">🔐</div>
+                <h3>Identity Verification</h3>
+                <p>Verify prototype document numbers against the demo verification database.</p>
+            </div>
+        
+        </div>
+        <div class="workflow-section">
+
+            <h2>⚙️ How Our AI Screening Works</h2>
+        
+            <div class="workflow">
+        
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <h3>Upload</h3>
+                    <p>Upload an identity document for screening.</p>
+                </div>
+        
+                <div class="workflow-arrow">→</div>
+        
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <h3>Validate</h3>
+                    <p>Check image quality and document structure.</p>
+                </div>
+        
+                <div class="workflow-arrow">→</div>
+        
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <h3>Analyze</h3>
+                    <p>Screen text regions and suspicious patterns.</p>
+                </div>
+        
+                <div class="workflow-arrow">→</div>
+        
+                <div class="workflow-step">
+                    <div class="step-number">4</div>
+                    <h3>Verify</h3>
+                    <p>Match identity data with the prototype database.</p>
+                </div>
+        
+                <div class="workflow-arrow">→</div>
+        
+                <div class="workflow-step">
+                    <div class="step-number">5</div>
+                    <h3>Decision</h3>
+                    <p>Generate a fraud-risk screening outcome.</p>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+        <div class="technology-section">
+
+            <h2>💻 Technology & System Architecture</h2>
+        
+            <div class="technology-cards">
+        
+                <div class="technology-card">
+                    <div class="tech-icon">🌐</div>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS and JavaScript provide the interactive web interface.</p>
+                </div>
+        
+                <div class="technology-card">
+                    <div class="tech-icon">🖼️</div>
+                    <h3>Current Validation</h3>
+                    <p>Automated image-resolution analysis checks uploaded document quality.</p>
+                </div>
+        
+                <div class="technology-card">
+                    <div class="tech-icon">🔐</div>
+                    <h3>Verification</h3>
+                    <p>A prototype database validates demo document numbers.</p>
+                </div>
+        
+                <div class="technology-card">
+                    <div class="tech-icon">🤖</div>
+                    <h3>AI Integration</h3>
+                    <p>Future integration: OCR, fake-document detection and face matching.</p>
+                </div>
+        
+            </div>
+        
+        </div>
+        <div class="upload-box">
+
+            <h2>Upload Identity Document</h2>
+
+            <p>
+                Upload an identity document for AI-powered screening
+            </p>
+
+            <input type="file" id="documentInput" accept="image/*">
+
+            <br><br>
+
+            <button id="analyzeBtn">
+                Analyze Document
+            </button>
+
+        </div>
+
+        <div id="previewContainer">
+
+            <h2>Document Preview</h2>
+
+            <img id="imagePreview" alt="Uploaded document preview">
+
+        </div>
+        <div class="verification-box">
+
+            <h2>🔐 Demo Identity Verification</h2>
+        
+            <p>
+                Enter a document number to verify against the prototype database.
+            </p>
+        
+            <input
+                type="text"
+                id="documentNumber"
+                placeholder="Enter Demo Document Number"
+            >
+        
+            <br><br>
+        
+            <button id="verifyBtn">
+                Verify Identity
+            </button>
+        
+            <p id="verificationResult"></p>
+        
+        </div>
+        <div id="analysisContainer">
+
+            <h2>AI Analysis</h2>
+
+            <p id="analysisText">
+                Waiting for document upload...
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
